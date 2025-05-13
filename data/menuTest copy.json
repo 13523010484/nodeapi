@@ -1,0 +1,124 @@
+{
+  "menuCode": "shch",
+  "menuName": "基础管理",
+  "menuSeqId": 1,
+  "menuIcon": "",
+  "children": [
+    {
+      "menuCode": "departmentManagement",
+      "menuName": "部门管理",
+      "menuSeqId": 1,
+      "menuIcon": "deptIcon",
+      "children": [
+        {
+          "menuCode": "department",
+          "menuName": "部门信息维护",
+          "menuSeqId": 1,
+          "menuIcon": "",
+          "menuUrl": "departmentManagement/department",
+          "actions": [
+            {
+              "btnSeqId": 1,
+              "btnCode": "department:query",
+              "btnName": "查询",
+              "requestMethod": "POST",
+              "btnUrl": "/api/department/query",
+              "btnGroup": [
+                {
+                  "commonPrefix": "department",
+                  "isQuery": "1"
+                }
+              ]
+            },
+            {
+              "btnSeqId": 2,
+              "btnCode": "department:add",
+              "btnName": "新增",
+              "requestMethod": "POST",
+              "btnUrl": "/api/department/add",
+              "btnGroup": [
+                {
+                  "commonPrefix": "department",
+                  "isQuery": "0"
+                }
+              ]
+            },
+            {
+              "btnSeqId": 3,
+              "btnCode": "department:update",
+              "btnName": "修改",
+              "requestMethod": "POST",
+              "btnUrl": "/api/department/update",
+              "btnGroup": [
+                {
+                  "commonPrefix": "department",
+                  "isQuery": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuCode": "postManagement",
+      "menuName": "岗位管理",
+      "menuSeqId": 1,
+      "menuIcon": "deptIcon",
+      "children": [
+        {
+          "menuCode": "post",
+          "menuName": "岗位信息维护",
+          "menuSeqId": 1,
+          "menuIcon": "",
+          "menuUrl": "postManagement/post",
+          "actions": [
+            {
+              "btnSeqId": 1,
+              "btnCode": "post:query",
+              "btnName": "查询",
+              "requestMethod": "POST",
+              "btnUrl": "/api/post/query",
+              "btnGroup": [
+                {
+                  "commonPrefix": "post",
+                  "isQuery": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuCode": "userManagement",
+      "menuName": "用户管理",
+      "menuSeqId": 1,
+      "menuIcon": "deptIcon",
+      "children": [
+        {
+          "menuCode": "user",
+          "menuName": "用户信息维护",
+          "menuSeqId": 1,
+          "menuIcon": "",
+          "menuUrl": "userManagement/user",
+          "actions": [
+            {
+              "btnSeqId": 1,
+              "btnCode": "user:query",
+              "btnName": "查询",
+              "requestMethod": "POST",
+              "btnUrl": "/api/user/query",
+              "btnGroup": [
+                {
+                  "commonPrefix": "user",
+                  "isQuery": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

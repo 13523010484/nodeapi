@@ -1,0 +1,56 @@
+{
+  "menuCode": "shch",
+  "menuName": "根目录",
+  "menuSeq": 1,
+  "menuIcon": "tree",
+  "children": [
+    {
+      "menuCode": "userManagement",
+      "menuName": "用户管理",
+      "menuSeq": 1,
+      "menuIcon": "tree",
+      "children": [
+        {
+          "menuCode": "user",
+          "menuName": "用户申请",
+          "parentId": 1,
+          "menuId": 3,
+          "menuUrl": "userManagement/user",
+          "actions": [
+            {
+              "btnSeq": 1,
+              "btnCode": "userManagement:query",
+              "btnName": "查询",
+              "requestMethod": "POST",
+              "btnUrl": "/base/userManagement/query"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuCode": "departmentManagement",
+      "menuName": "部门管理",
+      "menuSeq": 2,
+      "menuIcon": "tree",
+      "children": [
+        {
+          "menuCode": "department",
+          "menuName": "部门列表",
+          "menuSeq": 5,
+          "menuIcon": "tree",
+          "menuUrl": "departmentManagement/department",
+          "actions": [
+            {
+              "btnSeq": 1,
+              "btnCode": "departmentManagement:query",
+              "btnName": "查询",
+              "requestMethod": "POST",
+              "btnUrl": "/base/departmentManagement/query"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
